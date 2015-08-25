@@ -8,81 +8,81 @@ User Classify
 
 ##Characteristics to be extracted:
 
-*Profile Features
+* Profile Features
 
-	*Name
-	
-	*Gender
-	
-	*regional origin
-	
-	*age
-	
-*User Network Structure
+	* Name
 
-	*Following frequency
-	
-	*Followers frequency
-	
-*Tweeting Behaviour
+	* Gender
 
-	*No. of messages per day
-	
-	*No. of links, images etc
-	
-*Linguistic Content
+	* regional origin
 
-	*Types of words used : No. of abbreviations, lmao, wtf type of words etc
-	
-	*smileys/emoticons
-	
-	*possessive bigrams
-	
-	*repeated alphabets
-	
-		*laugh
-		
-		*shout
-		
-		*exasperation
-		
-		*agreement
-		
-		*honorifics like dude, man, bro etc
-		
-		*Excitement
-		
-		*Puzzlement
-		
-		*possessives like my this, my that, my bf, my prof etc
-		
-	*Hash Tagged words
-	
-	*Sentiment Words
-	
-*Political content
+	* age
 
-*Social Network
+* User Network Structure
 
-	*Who you tweet
-	
-	*tweets in response to tweets
-	
-	*retweets
-	
+	* Following frequency
+
+	* Followers frequency
+
+* Tweeting Behaviour
+
+	* No. of messages per day
+
+	* No. of links, images etc
+
+* Linguistic Content
+
+	* Types of words used : No. of abbreviations, lmao, wtf type of words etc
+
+	* smileys/emoticons
+
+	* possessive bigrams
+
+	* repeated alphabets
+
+		* laugh
+
+		* shout
+
+		* exasperation
+
+		* agreement
+
+		* honorifics like dude, man, bro etc
+
+		* Excitement
+
+		* Puzzlement
+
+		* possessives like my this, my that, my bf, my prof etc
+
+	* Hash Tagged words
+
+	* Sentiment Words
+
+* Political content
+
+* Social Network
+
+	* Who you tweet
+
+	* tweets in response to tweets
+
+	* retweets
+
 
 
 ##Basis Of Classification:
 
-*Political affiliation
+* Political affiliation
 
-*Ethnicity
+* Ethnicity
 
-*Location/Area
+* Location/Area
 
-*Occupation
+* Occupation
 
-*Religious Beliefs 
+* Religious Beliefs 
 
 
 
@@ -90,7 +90,7 @@ User Classify
 
 ##Algorithms that can be employed:
 
-*Multiclass SVM
+* Multiclass SVM
 
 
 
