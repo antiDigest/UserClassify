@@ -6,39 +6,39 @@ User Classify
 
 * Profile Features
 
-	* Name -
+	* Name -done
 
 	* Gender ??
 
-	* regional origin -> location -
+	* regional origin -> location -done
 
 	* age ??
 
 * User Network Structure
 
-	* Following frequency -
+	* Following frequency -done
 
-	* Followers frequency -
+	* Followers frequency -done
 
 * Tweeting Behaviour
 
 	* No. of messages/tweets per day ??
 
-	* No. of links, images etc -
+	* No. of links, images etc -done
 
-	* Status Count -
+	* Status Count -done
 
 * Linguistic Content
 
 	* Types of words used : No. of abbreviations, lmao, wtf type of words etc ??
 
-	* smileys/emoticons ??
+	* smileys/emoticons -done
 
 	* repeated alphabets
 
 		* laugh 
 
-		* shout -
+		* shout -done
 
 		* exasperation
 
@@ -52,17 +52,17 @@ User Classify
 
 		* possessives like my this, my that, my bf, my prof etc (possessive bigrams)
 
-	* Hash Tagged words -
+	* Hash Tagged words -done
 
-	* Sentiment Words -
+	* Sentiment Words -done
 
 * Social Network
 
-	* Who you tweet -
+	* Who you tweet -done
 
-	* tweets in response to tweets -
+	* tweets in response to tweets -done
 
-	* retweets -
+	* retweets -done
 
 
 ##Basis Of Classification:
