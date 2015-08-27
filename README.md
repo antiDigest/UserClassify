@@ -36,11 +36,11 @@ User Classify
 
 	* repeated alphabets
 
-		* laugh 
+		* laugh -done
 
 		* shout -done
 
-		* exasperation
+		* exasperation ??
 
 		* agreement
 
