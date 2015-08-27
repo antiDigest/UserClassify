@@ -6,41 +6,39 @@ User Classify
 
 * Profile Features
 
-	* Name
+	* Name -
 
-	* Gender
+	* Gender ??
 
-	* regional origin
+	* regional origin -> location -
 
-	* age
+	* age ??
 
 * User Network Structure
 
-	* Following frequency
+	* Following frequency -
 
-	* Followers frequency
+	* Followers frequency -
 
 * Tweeting Behaviour
 
-	* No. of messages per day
+	* No. of messages/tweets per day ??
 
-	* No. of links, images etc
+	* No. of links, images etc -
 
-	* Status Count
+	* Status Count -
 
 * Linguistic Content
 
-	* Types of words used : No. of abbreviations, lmao, wtf type of words etc
+	* Types of words used : No. of abbreviations, lmao, wtf type of words etc ??
 
-	* smileys/emoticons
-
-	* possessive bigrams
+	* smileys/emoticons ??
 
 	* repeated alphabets
 
 		* laugh 
 
-		* shout
+		* shout -
 
 		* exasperation
 
@@ -48,32 +46,26 @@ User Classify
 
 		* honorifics like dude, man, bro etc
 
-		* Excitement
+		* Excitement 
 
 		* Puzzlement
 
-		* possessives like my this, my that, my bf, my prof etc
+		* possessives like my this, my that, my bf, my prof etc (possessive bigrams)
 
-	* Hash Tagged words
+	* Hash Tagged words -
 
-	* Sentiment Words
-
-* Political content
+	* Sentiment Words -
 
 * Social Network
 
-	* Who you tweet
+	* Who you tweet -
 
-	* tweets in response to tweets
+	* tweets in response to tweets -
 
-	* retweets
+	* retweets -
 
 
 ##Basis Of Classification:
-
-* Ethnicity
-
-* Location/Area
 
 * Occupation
 
@@ -83,6 +75,12 @@ User Classify
 ##Algorithms that can be employed:
 
 * Multiclass SVM
+
+* Co Factorisation Machines
+
+* ZeroR
+
+* Gradient Classifiers
 
 
 ###Comments

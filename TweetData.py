@@ -19,13 +19,23 @@ api = tweepy.API(auth)
 
 def TweetData():
     i=0
-    followers = api.followers_ids('Barack Obama')
+    followers = api.followers_ids('@MariahCarey')
+    userdata = []
+    print len(followers)
     for follow in followers:
-        print follow
         statuses = api.statuses_lookup([follow])
+        # print statuses
         for status in statuses:
-            print status
-            break
-        break
+            # print [status.text, status.id, status.author.statuses_count, status.author.followers_count,\
+            #                 status.author.friends_count, status.author.location, status.author.favourites_count,\
+            #                 status.author.name, status.author.created_at, status.author.time_zone,\
+            #                 status._json['retweeted'],status._json['in_reply_to_screen_name'], \
+            #                 status._json['in_reply_to_status_id']]
+            userdata += [[status.text, status.id, status.author.statuses_count, status.author.followers_count,\
+                                        status.author.friends_count, status.author.location, status.author.favourites_count,\
+                                        status.author.name, status.author.created_at, status.author.time_zone,\
+                                        status._json['retweeted'],status._json['in_reply_to_screen_name'], \
+                                        status._json['in_reply_to_status_id']]]
+            print userdata
 
 TweetData()
