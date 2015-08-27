@@ -42,15 +42,15 @@ User Classify
 
 		* exasperation ??
 
-		* agreement
+		* agreement -done
 
-		* honorifics like dude, man, bro etc
+		* honorifics like dude, man, bro etc ??
 
-		* Excitement 
+		* Excitement ??
 
-		* Puzzlement
+		* Puzzlement ??
 
-		* possessives like my this, my that, my bf, my prof etc (possessive bigrams)
+		* possessives like my this, my that, my bf, my prof etc (possessive bigrams) -
 
 	* Hash Tagged words -done
 
