@@ -76,11 +76,10 @@ User Classify
 
 * Multiclass SVM
 
-* Co Factorisation Machines
+* KNN
 
-* ZeroR
+* Gradient Boost Decision Trees
 
-* Gradient Classifiers
 
 
 ###Comments
