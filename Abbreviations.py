@@ -1,17 +1,4 @@
-tests=(
-    ('fck','fc kopenhavn'),
-    ('fco','fc kopenhavn'),
-    ('irl','in real life'),
-    ('irnl','in real life'),    
-    ('ifk','ifk gotebork'),   
-    ('ifko','ifk gotebork'),    
-    ('aik','allmanna idrottskluben'),
-    ('aid','allmanna idrottskluben'),
-    ('manu','manchester united'), 
-    ('fz','faz zoo'), 
-    ('fzz','faz zoo'),
-    ('fzzz','faz zoo'),    
-    )
+
 
 def AbbrevFind(abbrev, text):
     abbrev=abbrev.lower()

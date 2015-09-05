@@ -25,8 +25,6 @@ sys.setdefaultencoding('utf-8')
 parenthesis = [')','(', ']','[','{','}','*','&','\\','!','$','^',';','<','>','?','_','=','+','RT','.']
 # print stopwords.words('english')
 def getTaggedWords():
-    
-    
 
     return taggedtext
 
