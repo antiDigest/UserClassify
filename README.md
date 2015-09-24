@@ -65,12 +65,6 @@ User Classify
 
 * Occupation
 
-* Religious Beliefs 
-
-* Gender
-
-* Age
-
 ##Algorithms that can be employed:
 
 * Multiclass SVM ??
