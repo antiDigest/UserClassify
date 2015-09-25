@@ -6,33 +6,33 @@ User Classify
 
 * Profile Features
 
-	* Name -done
+	* Name -done -- Removed, does not help in classifying occupation
 
-	* regional origin -> location -done
+	* regional origin -> location -done -- Industries seem to concentrate in some areas
 
 * User Network Structure
 
-	* Following frequency -done
+	* Following frequency -done --removed
 
-	* Followers frequency -done
+	* Followers frequency -done --million fans if celeb or political person
 
 * Tweeting Behaviour
 
-	* No. of messages/tweets per day ?? -x
+	* No. of messages/tweets per day ?? -x --maybe important depends on experiments
 
-	* No. of links, images etc -done
+	* No. of links, images etc -done --Based on experiments and how HITS algorithm works
 
-	* Status Count -done
+	* Status Count -done --Check if you can get date of joining
 
 * Linguistic Content
 
-	* Types of words used : No. of abbreviations, lmao, wtf type of words etc ??
+	* bad words --politician might not use bad words.
 
-	* smileys/emoticons -done
+	* smileys/emoticons -done --removed, type maybe
+ 
+	* repeated alphabets --removed
 
-	* repeated alphabets
-
-		* laugh -done
+		* laugh -done 
 
 		* shout -done
 
@@ -48,28 +48,22 @@ User Classify
 
 		* possessives like my this, my that, my bf, my prof etc (possessive bigrams) -CountVectoriser
 
-	* Hash Tagged words -done
+	* Hash Tagged words -done --on the side
 
-	* Sentiment Words -done
+	* Sentiment Words -done --Useful
 
 * Social Network
 
-	* Who you tweet -done
+	* Who you tweet -done --on the side
 
-	* tweets in response to tweets -done
+	* tweets in response to tweets -done --number
 
-	* retweets -done
+	* retweets -done --number
 
 
 ##Basis Of Classification:
 
 * Occupation
-
-* Religious Beliefs 
-
-* Gender
-
-* Age
 
 ##Algorithms that can be employed:
 
