@@ -3,29 +3,39 @@ import string
 import csv
 import nltk
 from nltk.corpus import stopwords, wordnet
+from Emoticons import replaceEmoticons
 from stemming.porter2 import stem
 import pandas as pd
 import math
 import sys
 import os
 import codecs
-from robe.settings import BASE_DIR
 reload(sys)
 sys.setdefaultencoding('utf-8')
 
-# pos = os.path.join(BASE_DIR,'positive.txt')
-# neg = os.path.join(BASE_DIR,'negative.txt')
 
-# with open(pos,'r') as f:
-#     positive = f.read().split('\n')
+with open('positive.txt','r') as f:
+    positive = f.read().split('\n')
 
-# with open(neg,'r') as f:
-#     negative = f.read().split('\n')
+with open('negative.txt','r') as f:
+    negative = f.read().split('\n')
 
 parenthesis = [')','(', ']','[','{','}','*','&','\\','!','$','^',';','<','>','?','_','=','+','RT','.']
 # print stopwords.words('english')
 def getTaggedWords():
+    neglist = []
+    poslist = []
 
+    for i in range(0,len(negative)):
+        neglist.append(-1)
+
+    for i in range(0,len(positive)):
+        poslist.append(1)
+
+    postagged = zip(positive, poslist)
+    negtagged = zip(negative, neglist)
+
+    taggedtext = postagged + negtagged
     return taggedtext
 
 customstopwords = ['band', 'they', 'them','and','the']
@@ -135,24 +145,20 @@ def classify(raw):
     else:
         return value
 
-def getSenti(stmt):
+def getSenti(s):
     print 'Getting Sentiment ... '
-    # print stmt
+    print s
     count_neg =0
     count_pos =0
     count_neutral = 0
-    for s in stmt:
-        # print s
-        # s = textClean(s)
-        if s!=' ':
-            out = classify(s)
-            # print out
-            if out < 0:
-                count_neg += 1
-            elif out > 0.0:
-                count_pos += 1
-            else:
-                count_neutral += 1
-            # print s, out
-    # print count_neutral, count_neg, count_pos, len(stmt)
-    return count_neutral, count_neg, count_pos, len(stmt)
+
+    s = replaceEmoticons(s)
+
+    if s!=' ':
+        out = classify(s)
+        if out < 0:
+            return -1
+        elif out > 0.0:
+            return 1
+        else:
+            return 0

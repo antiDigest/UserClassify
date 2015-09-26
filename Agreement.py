@@ -7,7 +7,7 @@ words = ["agree","agreed","yea","yeah","yes","yo","yup","way to go","amen","that
 	"hold","concur","concord","match","fit","correspond","check","jibe","gibe","tally",\
 	"harmonize","harmonise","consort","accord","concord","fit in"]
 
-def Agreement():
+def Agreement(text):
 	count = 0
 	for i in words:
 		if i in text:
