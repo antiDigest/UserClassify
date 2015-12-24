@@ -2,6 +2,7 @@ from twython import Twython
 import twython
 import os
 import ConfigParser
+import json
 
 CURRENT_DIR = os.path.abspath(os.path.dirname(__file__))
 
@@ -21,13 +22,8 @@ with open('jobs-users') as twitter_user_ids:
 user_timeline = []
 count = 0
 
-for i in ids:
-    try:
-        user_timeline += [twitter.get_user_timeline(user_id=i.split()[0], count=100)]
-    except twython.exceptions.TwythonError:
-        with open('jobs-users','a') as f:
-            f.write(user_timeline)
-        user_timeline = []
-        count += 1
+user_timeline = twitter.get_user_timeline(user_id= ids[0].split()[0], count=100)
 
-print 'Count :',count
+print user_timeline.text
+    
+# print json.dumps(user_timeline)
