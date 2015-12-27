@@ -1,8 +1,9 @@
 from twython import Twython
-import twython
 import os
 import ConfigParser
 import json
+import pandas as pd
+from pandas.io.json import json_normalize
 
 CURRENT_DIR = os.path.abspath(os.path.dirname(__file__))
 
@@ -16,14 +17,24 @@ twitter = Twython(
     config.get("Twitter","Access_Token_Secret")
 )
 
-with open('jobs-users') as twitter_user_ids:
-    ids = twitter_user_ids.readlines()
+ids = []
+
+with open('jobs-users') as ju:
+    for u in ju:
+    	ids += [u.split(' ')[0]]
+
+print ids
 
 user_timeline = []
 count = 0
+output = []
 
-user_timeline = twitter.get_user_timeline(user_id= ids[0].split()[0], count=100)
+for i in ids:
+    try:
+        user_timeline = twitter.get_user_timeline(user_id=i.split()[0], count=100)
+        data = json.dumps(user_timeline)
+        output += [pd.read_json(data)]
+    except twython.exceptions.TwythonError:
+        count += 1
+        print count
 
-print user_timeline.text
-    
-# print json.dumps(user_timeline)
