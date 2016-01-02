@@ -1,16 +1,18 @@
-from twython import Twython
 import os
 import ConfigParser
-import json
+import json, sys
 import pandas as pd
 from pandas.io.json import json_normalize
+import twython
+reload(sys)
+sys.setdefaultencoding('utf-8')
 
 CURRENT_DIR = os.path.abspath(os.path.dirname(__file__))
 
 config = ConfigParser.ConfigParser()
 config.read(os.path.join(CURRENT_DIR, 'config.ini'))
 
-twitter = Twython(
+twitter = twython.Twython(
     config.get("Twitter","Consumer_Key"),
     config.get("Twitter","Consumer_Secret"),
     config.get("Twitter","Access_Token_Key"),
@@ -23,7 +25,7 @@ with open('jobs-users') as ju:
     for u in ju:
     	ids += [u.split(' ')[0]]
 
-print ids
+# print ids
 
 user_timeline = []
 count = 0
@@ -33,8 +35,11 @@ for i in ids:
     try:
         user_timeline = twitter.get_user_timeline(user_id=i.split()[0], count=100)
         data = json.dumps(user_timeline)
-        output += [pd.read_json(data)]
+        data = pd.read_json(data)
+        data.to_csv('Data/output.csv',header=True, index=False)
     except twython.exceptions.TwythonError:
         count += 1
-        print count
+        if count > 5:
+            print 'Limits Reached'
+            exit()
 
