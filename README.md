@@ -64,4 +64,6 @@ Classify twitter Users on the basis of their occupation using tweets and metadat
 
 *	We only need to select classifiers to work now, I hope that will not take much time.
 
+*	Find any more things we can use to determine occupation. That is done by manually visualising things.
+
 *	We need to meet Tanvir Sir after doing this.
