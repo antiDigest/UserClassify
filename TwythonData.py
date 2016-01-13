@@ -37,7 +37,7 @@ for i in ids:
         user_timeline = twitter.get_user_timeline(user_id=i.split()[0], count=100)
         data = json.dumps(user_timeline)
         data = pd.read_json(data)
-        data.to_csv('Data/output.csv',header=True,index=True,mode='a')
+        data.to_csv('Data/output.csv',header=False,index=False,mode='a')
     except twython.exceptions.TwythonError:
         time.sleep(60*15)
         twitter = twython.Twython(
