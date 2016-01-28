@@ -25,8 +25,6 @@ with open('jobs-users') as ju:
     for u in ju:
     	ids += [u.split(' ')[0]]
 
-# print ids
-
 user_timeline = []
 count = 0
 output = []
